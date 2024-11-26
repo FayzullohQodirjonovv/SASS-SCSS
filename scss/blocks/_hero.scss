@@ -1,0 +1,350 @@
+.hero {
+  &__container {
+    @include df-row-between-center;
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 417px;
+      height: 655px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../.././icons/mobile.svg");
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__left-box {
+    @include df-column-center-start;
+  }
+
+  &__title {
+    width: 546px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    width: 446px;
+    position: relative;
+    @include df-row-center-center;
+  }
+
+  &__form-box {
+    width: 446px;
+    position: relative;
+  }
+
+  &__input {
+    width: 446px;
+    outline: none;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: white;
+    color: $san__jan-blue;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Public Sans", sans-serif;
+    transition: 240ms ease all;
+  }
+
+  &__button {
+    @include button-desktop;
+    position: absolute;
+    right: 0;
+  }
+
+  &__form-box-mb {
+    display: none;
+  }
+
+  &__input-mb {
+    display: none;
+  }
+
+  &__button-mb {
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $light__san-juan-blue;
+  }
+
+  &__span {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $light__san-juan-blue;
+  }
+  #email::placeholder {
+    color: $san__jan-blue;
+  }
+}
+@media (max-width: 1060px) {
+  .hero {
+    &__container {
+      width: 100%;
+      @include df-column-reverse-center;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 417px;
+        height: 658px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../.././icons/mobile.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__left-box {
+      width: 100%;
+      outline: hidden;
+      @include df-column-center-center;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      width: 573px;
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 30px;
+    }
+
+    &__form {
+      width: 446px;
+      position: relative;
+      @include df-row-center-center;
+    }
+
+    &__form-box {
+      width: 446px;
+      position: relative;
+    }
+
+    &__input {
+      width: 446px;
+      outline: none;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: white;
+      color: $san__jan-blue;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: "Public Sans", sans-serif;
+      transition: 240ms ease all;
+    }
+
+    &__button {
+      @include button-desktop;
+      position: absolute;
+      right: 0;
+    }
+
+    &__form-box-mb {
+      display: none;
+    }
+
+    &__input-mb {
+      display: none;
+    }
+
+    &__button-mb {
+      display: none;
+    }
+
+    &__text {
+      margin-left: 27px;
+      margin-top: 16px;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: $light__san-juan-blue;
+    }
+
+    &__span {
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: $light__san-juan-blue;
+    }
+    #email::placeholder {
+      color: $san__jan-blue;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    &__container {
+      padding: 0px 50px;
+      @include df-column-reverse-center;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 250px;
+        height: 350px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../.././icons/mobile.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &__left-box {
+      width: 100%;
+      @include df-column-center-center;
+    }
+
+    &__title {
+      width: 327px;
+      height: 108px;
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__form {
+      width: 100% !important;
+      display: block;
+      @include df-column-center-center;
+      margin-left: 18px;
+    }
+
+    &__form-box {
+      display: none;
+      width: 446px;
+      @include df-row-center-center;
+    }
+
+    &__input {
+      display: none !important;
+      width: 100% !important;
+      outline: none;
+      padding-bottom: 15px;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 327px;
+      height: 48px;
+      gap: 0px;
+      border-radius: 24px 0px 0px 0px;
+      padding: 15px 25px;
+      background-color: white;
+      color: $san__jan-blue;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: "Public Sans", sans-serif;
+      transition: 240ms ease all;
+    }
+
+    &__button {
+      display: none !important;
+      @include button-desktop;
+      position: absolute;
+      right: 0;
+    }
+
+    &__form-box-mb {
+      width: 100%;
+      display: block;
+      margin: 0 auto !important;
+      @include df-column-center-center;
+    }
+
+    &__input-mb {
+      width: 100%;
+      display: block !important;
+      outline: none;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      background-color: white;
+      color: $san__jan-blue;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: "Public Sans", sans-serif;
+      transition: 240ms ease all;
+      border: 2px solid $dark__pink;
+      margin-bottom: 16px;
+      margin-left: -20px;
+    }
+
+    &__button-mb {
+      width: 100%;
+      display: block !important;
+      outline: none;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: $dark__pink;
+      color: $link__water-white;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: "Public Sans", sans-serif;
+      border: 2px solid $dark__pink;
+      transition: 240ms ease all;
+      cursor: pointer;
+      margin-left: -20px;
+
+      &:active {
+        transition: 240ms ease all;
+        background: none;
+        color: $dark__pink;
+      }
+    }
+
+    &__text {
+      margin-left: 27px;
+      margin-top: 16px;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: $light__san-juan-blue;
+    }
+
+    &__span {
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: $light__san-juan-blue;
+    }
+    #email::placeholder {
+      color: $san__jan-blue;
+    }
+  }
+}

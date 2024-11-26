@@ -3,22 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
+<link rel="stylesheet" href="./css/main.css">
+    <title>PayApi</title>
   </head>
-  <body>
-    <h1 class="visually-hidden">Simple-starter</h1>
+
+  <body style="background: #edf3f8">
+    <!-- Desktop -->
     <header class="header">
-      <div class="container header__container"></div>
+      <div class="container header__container">
+        <div class="header__left-box">
+          <a class="header__logo-link" href="">
+            <img
+              class="header__logo-image"
+              src="./icons/payapi__sm.svg"
+              width="134"
+              height="37"
+              alt="open__burger"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__lists">
+                <a class="header__links" href="#"> Pricing </a>
+              </li>
+              <li class="header__lists">
+                <a class="header__links" href="#"> About </a>
+              </li>
+              <li class="header__lists">
+                <a class="header__links" href="#"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="header__button">Schedule a Demo</button>
+        <!-- MB -->
+        <a class="header__logo-link-mb" href="">
+          <img
+            class="header__logo-image-mb"
+            src="./icons/payapi__sm.svg"
+            width="134"
+            height="38"
+            alt="open__burger"
+          />
+        </a>
+        <button class="header__open-button-burger-mb">
+          <img
+            class="header__open-burger-mb"
+            src="././icons/open__burger-sm.svg"
+            width="22"
+            height="17"
+            alt="open__burger"
+          />
+        </button>
+      </div>
+      <nav class="header__nav-mb">
+        <div class="header__main-burger-mb">
+          <button class="header__close-button-burger-mb">
+            <img
+              class="header__close-burger-mb"
+              src="./icons/close__burger_sm.svg"
+              width="22"
+              height="22"
+              alt="close__burger"
+            />
+          </button>
+          <hr class="header__hr-mb" />
+          <ul class="header__list-mb">
+            <li class="header__lists-mb">
+              <a class="header__links-mb" href="#">Pricing</a>
+            </li>
+            <li class="header__lists-mb">
+              <a class="header__links-mb" href="#">About</a>
+            </li>
+            <li class="header__lists-mb">
+              <a class="header__links-mb" href="#">Contact</a>
+            </li>
+            <button class="header__button-mb">Schedule a Demo</button>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container"></div>
+        <div class="container hero__container">
+          <div class="hero__left-box">
+            <h2 class="hero__title">
+              Start building with our APIs for absolutely free.
+            </h2>
+            <form class="hero__form">
+              <div class="hero__form-box">
+                <input
+                  class="hero__input"
+                  type="text"
+                  required
+                  placeholder="Enter email address"
+                  autocomplete="off"
+                />
+              </div>
+              <button type="button" class="hero__button">
+                Schedule a Demo
+              </button>
+              <div class="hero__form-box-mb">
+                <input
+                  id="email"
+                  class="hero__input-mb"
+                  type="text"
+                  required
+                  placeholder="Enter email address  "
+                  autocomplete="off"
+                />
+                <button type="button" class="hero__button-mb">
+                  Schedule a Demo
+                </button>
+              </div>
+            </form>
+            <p class="hero__text">
+              Have any questions? <span class="hero__span">Contact Us</span>
+            </p>
+          </div>
+        </div>
       </section>
+      <!-- <section class="watch">
+        <div class="container watch__container">
+          <div class="watch__left-box">
+            <h2 class="watch__title">Who we work with</h2>
+            <p class="watch__text">
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+            <button class="watch__button">About Us</button>
+          </div>
+          <img
+            class="watch__images"
+            src="./icons/watch.svg"
+            width="280"
+            height="154"
+            alt=""
+          />
+          <img
+            class="watch__images-mb"
+            src="./icons/div.svg"
+            width="280"
+            height="154"
+            alt=""
+          />
+        </div>
+      </section> -->
+      <section class="hello">
+        <div class="container hello__container">
+          <div class="hero__left-box">
+            <h2 class="hello__title">Simple UI & UX</h2>
+            <p class="hello__text">Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. </p>
+          </div>
+          <img class="hello__images" src="./icons/hello.svg" width="722" height="660" alt="hello">
+        </div>
+      </section>
+      <section class="form">
+        <div class="container form__container">
+            <div class="form__left">
+                <div class="form__div">
+                    <img class="form__images" src="./icons/money.svg" width="106" height="106" alt="icons">
+                    <h2 class="form__title">Personal Finances</h2>
+                    <p class="form__text">Consolidate financial data from multiple sources and categorize transactions up to 2 years of
+                        history. Analyze reports to reconcile activities in your account. </p>
+                </div>
+                <div class="form__div">
+                    <img class="form__images" src="./icons/Group 18 (1).svg" width="106" height="106" alt="icons">
+                    <h2 class="form__title">Banking & Coverage</h2>
+                    <p class="form__text">With our platform, you can speed up account onboarding and support ongoing payments for
+                        checking, savings, credit card, and brokerage accounts.</p>
+                </div>
+                <div class="form__div">
+                    <img class="form__images" src="./icons/Group 19 (1).svg" width="106" height="106" alt="icons">
+                    <h2 class="form__title">Consumer Payments</h2>
+                    <p class="form__text">It’s easier to set up secure bank payments with us through a flow designed with the user
+                        experience in mind. Customers could instantly authenticate their account.</p>
+                </div>
+            </div>  
+         <h1 class="form__h1">Ready to start?</h1>
+        <form  class="hero__form">
+          <div class="hero__form-box">
+            <input
+              class="hero__input"
+              type="text"
+              required
+              placeholder="Enter email address"
+              autocomplete="off"
+            />
+          </div>
+          <button type="button" class="hero__button">
+            Schedule a Demo
+          </button>
+        </div>
+    </section> 
     </main>
-    <footer class="footer">
-      <div class="container footer__container"></div>
-    </footer>
+  <footer class="footer">
+      <div class="container footer__container">
+          <div class="footer__left">
+              <a href="#">
+                  <img class="footer__images" src="./icons/payapi.svg" alt="paypal">
+              </a>
+              <ul class="footer__list">
+                  <li class="footer__lists"><a class="footer__links" href="#">Pricing</a></li>
+                  <li class="footer__lists"><a class="footer__links" href="#">About</a></li>
+                  <li class="footer__lists"><a class="footer__links" href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="images">
+              <img src="./icons/fzb.svg" alt="">
+              <img src="./icons/twtr.svg" alt="">
+              <img src="./icons/in.svg" alt="">
+          </div>
+      </div>
+  </footer> 
+    <script src="./js/main.js"></script>
   </body>
 </html>

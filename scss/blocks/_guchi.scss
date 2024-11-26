@@ -1,0 +1,107 @@
+.guchi {
+  margin-top: 150px;
+  &__container {
+    @include df-row-between-center;
+  }
+
+  &__images {
+  }
+
+  &__left-box {
+    @include df-column-center-start;
+  }
+
+  &__title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: $san__jan-blue;
+  }
+
+  &__text {
+    width: 445px;
+    height: 84px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $san__jan-blue;
+    opacity: 70%;
+  }
+}
+@media (max-width: 1100px) {
+  .guchi {
+    margin-top: 100px;
+    &__container {
+      padding: 0 40px;
+      @include df-row-between-center;
+    }
+
+    &__images {
+      object-fit: cover;
+      width: 605px;
+      height: 344px;
+    }
+
+    &__left-box {
+      @include df-column-center-center;
+      gap: 14px;
+    }
+
+    &__title {
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 48px;
+      color: $san__jan-blue;
+    }
+
+    &__text {
+      width: 573px;
+      text-align: center;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $san__jan-blue;
+      opacity: 70%;
+    }
+  }
+}
+@media (max-width: 740px) {
+  .guchi {
+    &__container {
+      @include df-column-reverse-center;
+      padding: 40px 24px;
+    }
+
+    &__images {
+      width:605px;
+      height:444px;
+      margin-left: 100px;
+    }
+
+    &__left-box {
+      @include df-column-center-center;
+      gap: 14px;
+    }
+
+    &__title {
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 36px;
+      color: $san__jan-blue;
+    }
+
+    &__text {
+      width: 328px;
+      height: 112px;
+      text-align: center;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $san__jan-blue;
+      opacity: 70%;
+    }
+  }
+}

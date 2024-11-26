@@ -1,0 +1,398 @@
+.header {
+  &__container {
+    padding: 24px 41px;
+    @include df-row-between-center;
+  }
+
+  &__left-box {
+    @include df-row-between-center;
+    gap: 65px;
+  }
+
+  &__logo-link {
+    opacity: 1;
+    transition: 240ms ease all;
+
+    &:active {
+      opacity: 0.4;
+      transition: 240ms ease all;
+    }
+  }
+
+  &__logo-image {
+    vertical-align: middle;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    @include df-row-between-center;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  &__lists {
+  }
+
+  &__links {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #36536b;
+    transition: 500ms ease all;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $dark__pink;
+      transition: 500ms ease all;
+    }
+  }
+
+  &__button {
+    @include button-desktop;
+  }
+
+  &__logo-link-mb {
+    display: none;
+  }
+
+  &__logo-image-mb {
+    display: none;
+  }
+
+  &__open-button-burger-mb {
+    display: none;
+  }
+
+  &__open-image-burger-mb {
+    display: none;
+  }
+
+  &__nav-mb {
+    display: none;
+  }
+
+  &__main-burger-mb {
+    display: none;
+  }
+
+  &__close-button-burger-mb {
+    display: none;
+  }
+
+  &__close-image-burger-mb {
+    display: none;
+  }
+
+  &__hr-mb {
+    display: none;
+  }
+
+  &__list-mb {
+    display: none;
+  }
+
+  &__lists-mb {
+    display: none;
+  }
+
+  &__links-mb {
+    display: none;
+  }
+
+  &__button-mb {
+    display: none;
+  }
+}
+// planshet
+@media (max-width: 820px) {
+  .header {
+    &__container {
+      padding: 24px 41px;
+      @include df-row-between-center;
+    }
+
+    &__left-box {
+      @include df-row-between-center;
+      gap: 32px;
+    }
+
+    &__logo-link {
+      opacity: 1;
+      transition: 240ms ease all;
+
+      &:active {
+        opacity: 0.4;
+        transition: 240ms ease all;
+      }
+    }
+
+    &__logo-image {
+      vertical-align: middle;
+    }
+
+    &__nav {
+    }
+
+    &__list {
+      @include df-row-between-center;
+      gap: 40px;
+      padding: 40px 0;
+    }
+
+    &__lists {
+    }
+
+    &__links {
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #36536b;
+      transition: 500ms ease all;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $dark__pink;
+        transition: 500ms ease all;
+      }
+    }
+
+    &__button {
+      @include button-desktop;
+    }
+
+    &__logo-link-mb {
+      display: none;
+    }
+
+    &__logo-image-mb {
+      display: none;
+    }
+
+    &__open-button-burger-mb {
+      display: none;
+    }
+
+    &__open-image-burger-mb {
+      display: none;
+    }
+
+    &__nav-mb {
+      display: none;
+    }
+
+    &__main-burger-mb {
+      display: none;
+    }
+
+    &__close-button-burger-mb {
+      display: none;
+    }
+
+    &__close-image-burger-mb {
+      display: none;
+    }
+
+    &__hr-mb {
+      display: none;
+    }
+
+    &__list-mb {
+      display: none;
+    }
+
+    &__lists-mb {
+      display: none;
+    }
+
+    &__links-mb {
+      display: none;
+    }
+
+    &__button-mb {
+      display: none;
+    }
+  }
+}
+@media (max-width: 740px) {
+  .header {
+    &__container {
+      padding: 24px 24px;
+      @include df-row-between-center;
+    }
+
+    &__left-box {
+      display: none !important;
+      @include df-row-center-center;
+      gap: 32px;
+    }
+
+    &__logo-link {
+      display: none !important;
+      opacity: 1;
+      transition: 240ms ease all;
+
+      &:active {
+        opacity: 0.4;
+        transition: 240ms ease all;
+      }
+    }
+
+    &__logo-image {
+      display: none !important;
+      vertical-align: middle;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__list {
+      display: none;
+      @include df-row-center-center;
+      gap: 40px;
+      padding: 40px 0;
+    }
+
+    &__lists {
+      display: none;
+    }
+
+    &__links {
+      display: none;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #36536b;
+      transition: 500ms ease all;
+
+      &:hover {
+        transform: none;
+        color: red;
+        transition: 0ms ease all;
+      }
+
+      &:active {
+        color: red;
+      }
+    }
+
+    &__button {
+      display: none !important;
+    }
+
+    &__logo-link-mb {
+      display: block;
+    }
+
+    &__logo-image-mb {
+      display: block;
+    }
+
+    &__open-button-burger-mb {
+      display: block;
+    }
+
+    &__open-burger-mb {
+      display: block;
+    }
+
+    &__nav-mb {
+      display: none;
+    }
+
+    &__main-burger-mb {
+      display: block;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: end;
+      top: 0;
+      margin: 0 auto;
+      right: 0px;
+      padding: 51px 24px;
+      background-color: #0B1E3E;
+      width: 80%;
+      height: 100vh;
+      z-index: 1;
+    }
+
+    &__close-button-burger-mb {
+      display: block;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__close-burger-mb {
+      display: block;
+    }
+
+    &__hr-mb {
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 43px;
+      width: 100%;
+      height: 1px;
+      background-color: #979797;
+      opacity: 15%;
+    }
+
+    &__list-mb {
+      display: block;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__lists-mb {
+      display: block;
+    }
+
+    &__links-mb {
+      color: gray;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      display: block;
+    }
+
+    &__button-mb {
+      outline: none;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 58px;
+      background-color: #041E7B;
+      color: $link__water-white;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: "Public Sans", sans-serif;
+      border: 3px solid black;
+      transition: 240ms ease all;
+      cursor: pointer;
+  
+      &:active {
+          transition: 240ms ease all;
+          background: none;
+          color: black;
+      }
+      display: block;
+    }
+  }
+
+  .header__nav-mb.open {
+    transition: 1s !important;
+    display: block;
+  }
+  .header__nav-mb.open {
+    transition: 1s !important;
+    display: block;
+  }
+}

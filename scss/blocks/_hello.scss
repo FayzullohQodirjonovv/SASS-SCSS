@@ -1,0 +1,96 @@
+.hello {
+  &__container {
+    @include df-row-between-center;
+  }
+
+  &__title {
+    width: 573px;
+    height: 56px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: $san__jan-blue;
+  }
+
+  &__text {
+    @include df-row-between-center;
+    width: 100%;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $san__jan-blue;
+    opacity: 70%;
+  }
+  &__images {
+    @include df-row-between-center;
+    width: 565.5px;
+    height: 499.43px;
+  }
+}
+@media (max-width: 1060px) {
+  .hello {
+    &__container {
+      @include df-column-reverse-center;
+    }
+
+    &__title {
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 48px;
+      color: $san__jan-blue;
+    }
+
+    &__text {
+      width: 600px;
+      height: 56px;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $san__jan-blue;
+      opacity: 70%;
+    }
+  }
+  .hero {
+    &__left-box {
+    }
+  }
+}
+@media (max-width: 740px) {
+  .hello {
+    &__container {
+      @include df-column-reverse-center;
+    }
+
+    &__title {
+      width: 327px;
+      height: 36px;
+      font-family: "DM Serif Display", serif;
+      font-weight: 400;
+      font-size: 48px;
+      color: $san__jan-blue;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      width: 318px;
+      height: 84px;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: $san__jan-blue;
+      opacity: 70%;
+      margin-left: 30px;
+      margin-bottom: 50px;
+      
+    }
+    &__images {
+      width: 361.92px;
+      height: 319.64px;
+      margin-left: 50px;
+    }
+  }
+}
